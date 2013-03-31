@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Immigrants of Canat/TileModifyingViewController.m"
-         timestampString = "386436737.730852"
+         timestampString = "386465456.504537"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "56"
-         endingLineNumber = "56"
+         startingLineNumber = "92"
+         endingLineNumber = "92"
          landmarkName = "-viewWillAppear:"
          landmarkType = "5">
       </FileBreakpoint>

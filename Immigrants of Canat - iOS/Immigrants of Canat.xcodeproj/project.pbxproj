@@ -94,8 +94,8 @@
 		E7015AFF1707F3E400933C19 /* woodtile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = woodtile.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/woodtile.png"; sourceTree = "<group>"; };
 		E7015B0C1707F7C900933C19 /* desert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = desert.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/desert.png"; sourceTree = "<group>"; };
 		E7015B0E1707FC6B00933C19 /* genericport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = genericport.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/genericport.png"; sourceTree = "<group>"; };
-		E706B44E1708904500C9E786 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		E706B4501708906D00C9E786 /* iconsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconsmall.png; sourceTree = "<group>"; };
+		E706B44E1708904500C9E786 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		E706B4501708906D00C9E786 /* iconsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconsmall.png; path = ../iconsmall.png; sourceTree = "<group>"; };
 		E75A5297170846BA008CCDAE /* bluesettlement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bluesettlement.png; path = "../../../../Desktop/HackRU Shit/bluesettlement.png"; sourceTree = "<group>"; };
 		E75A5298170846BA008CCDAE /* greensettlement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greensettlement.png; path = "../../../../Desktop/HackRU Shit/greensettlement.png"; sourceTree = "<group>"; };
 		E75A5299170846BA008CCDAE /* pinksettlement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinksettlement.png; path = "../../../../Desktop/HackRU Shit/pinksettlement.png"; sourceTree = "<group>"; };
@@ -197,6 +197,8 @@
 		E78BC0891707A64B006C4E69 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E706B4501708906D00C9E786 /* iconsmall.png */,
+				E706B44E1708904500C9E786 /* icon.png */,
 				E75A52BE170861DE008CCDAE /* bricktilehole.png */,
 				E75A52BF170861DE008CCDAE /* sheeptilehole.png */,
 				E75A52C0170861DE008CCDAE /* stonetilehole.png */,
@@ -238,8 +240,6 @@
 		E79FDC881704141800150B36 = {
 			isa = PBXGroup;
 			children = (
-				E706B4501708906D00C9E786 /* iconsmall.png */,
-				E706B44E1708904500C9E786 /* icon.png */,
 				E79FDC9A1704141800150B36 /* Immigrants of Canat */,
 				E79FDC931704141800150B36 /* Frameworks */,
 				E79FDC921704141800150B36 /* Products */,

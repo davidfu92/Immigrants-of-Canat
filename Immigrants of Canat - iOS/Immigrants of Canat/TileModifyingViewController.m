@@ -51,17 +51,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-
-- (void)viewWillAppear:(BOOL)animated {
-    NSString *identifier = [_sentButton titleForState:UIControlStateNormal];
-    NSRange first = {0, 1};
-    NSRange second = {1, 2};
-    NSUInteger y = [[identifier substringWithRange:first] integerValue];
-    NSUInteger x = [[identifier substringWithRange:second] integerValue];
-    ResourceTile *tile = (ResourceTile *)[_board getTileAtPoint:CGPointMake(x, y)];
-    [tile setBigTile:_centerButton];
-    NSUInteger resource = [tile getResourceType];
-    _mainLabel.text = [NSString stringWithFormat:@"%d", [tile getNumberOfTile]];
+- (void)assignResource:(NSUInteger)resource toTile:(UIButton *)tile {
     UIImage *image;
     if(resource == STONE_RESOURCE) {
         image = [UIImage imageNamed:@"stonetilehole.png"];
@@ -76,7 +66,43 @@
     } else if(resource == NORESOURCE) {
         image = [UIImage imageNamed:@"desert.png"];
     }
-    [_centerButton setImage:image forState:UIControlStateNormal];
+    [tile setImage:image forState:UIControlStateNormal];
+}
+
+- (void)assignPort:(NSUInteger)portType toTile:(UIButton *)tile {
+    UIImage *image;
+    if(portType == ORE_PORT) {
+        image = [UIImage imageNamed:@"oreport.png"];
+    } else if(portType == BRICK_PORT) {
+        image = [UIImage imageNamed:@"brickport.png"];
+    } else if(portType == WHEAT_PORT) {
+        image = [UIImage imageNamed:@"wheatport.png"];
+    } else if(portType == SHEEP_PORT) {
+        image = [UIImage imageNamed:@"sheepport.png"];
+    } else if(portType == WOOD_PORT) {
+        image = [UIImage imageNamed:@"woodport.png"];
+    } else if(portType == GENERIC_PORT) {
+        image = [UIImage imageNamed:@"genericport.png"];
+    }
+    [tile setImage:image forState:UIControlStateNormal];
+}
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    NSString *identifier = [_sentButton titleForState:UIControlStateNormal];
+    NSRange first = {0, 1};
+    NSRange second = {1, 2};
+    NSUInteger y = [[identifier substringWithRange:first] integerValue];
+    NSUInteger x = [[identifier substringWithRange:second] integerValue];
+    ResourceTile *tile = (ResourceTile *)[_board getTileAtPoint:CGPointMake(x, y)];
+    [tile setBigTile:_centerButton];
+    NSUInteger resource = [tile getResourceType];
+    if([tile getResourceType] != NORESOURCE) {
+        _mainLabel.text = [NSString stringWithFormat:@"%d", [tile getNumberOfTile]];
+    } else {
+        _mainLabel.text = @"";
+    }
+    [self assignResource:resource toTile:_centerButton];
     NSArray *surroundingTiles = [tile getSurroundingTiles];
     for(UIButton *button in _surroundingButtons) {
         NSUInteger buttonNumber = [[button titleForState:UIControlStateNormal] integerValue];
@@ -84,45 +110,30 @@
         if([tmpTile isMemberOfClass:[ResourceTile class]]) {
             ResourceTile *newTile = (ResourceTile *)tmpTile;
             resource = [newTile getResourceType];
-            if(resource == STONE_RESOURCE) {
-                image = [UIImage imageNamed:@"stonetilehole.png"];
-            } else if(resource == BARLEY_RESOURCE) {
-                image = [UIImage imageNamed:@"wheattilehole.png"];
-            } else if(resource == LIVESTOCK_RESOURCE) {
-                image = [UIImage imageNamed:@"sheeptilehole.png"];
-            } else if(resource == LUMBER_RESOURCE) {
-                image = [UIImage imageNamed:@"woodtilehole.png"];
-            } else if(resource == CLAY_RESOURCE) {
-                image = [UIImage imageNamed:@"bricktilehole.png"];
-            } else if(resource == NORESOURCE) {
-                image = [UIImage imageNamed:@"desert.png"];
-            }
+            [self assignResource:resource toTile:button];
         } else {
             OceanTile *newTile = (OceanTile *)tmpTile;
             if([newTile isPortTile]) {
                 NSUInteger portType = [newTile getPortType];
-                if(portType == ORE_PORT) {
-                    image = [UIImage imageNamed:@"oreport.png"];
-                } else if(portType == BRICK_PORT) {
-                    image = [UIImage imageNamed:@"brickport.png"];
-                } else if(portType == WHEAT_PORT) {
-                    image = [UIImage imageNamed:@"wheatport.png"];
-                } else if(portType == SHEEP_PORT) {
-                    image = [UIImage imageNamed:@"sheepport.png"];
-                } else if(portType == WOOD_PORT) {
-                    image = [UIImage imageNamed:@"woodport.png"];
-                }
+                [self assignPort:portType toTile:button];
             } else {
-                image = [UIImage imageNamed:@"oceantile.png"];
+                UIImage *image = [UIImage imageNamed:@"oceantile.png"];
+                [button setImage:image forState:UIControlStateNormal];
             }
         }
-        [button setImage:image forState:UIControlStateNormal];
     }
     for(UILabel *label in _labelArray) {
         NSUInteger labelNumber = [label.text integerValue];
         ResourceTile *tmpTile = [surroundingTiles objectAtIndex:labelNumber - 1];
         if([tmpTile isKindOfClass:[ResourceTile class]]) {
-            label.text = [NSString stringWithFormat:@"%d", [tmpTile getNumberOfTile]];
+            if([tmpTile getResourceType] != NORESOURCE) {
+                label.text = [NSString stringWithFormat:@"%d", [tmpTile getNumberOfTile]];
+            } else {
+                label.text = @"";
+            }
+            
+        } else {
+            label.text = @"";
         }
         
     }
