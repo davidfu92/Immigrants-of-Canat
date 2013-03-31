@@ -20,6 +20,7 @@
 - (id)initWithLocation:(CGPoint)location andPortStatus:(BOOL)isPort;
 - (void)setCorrespondingButton:(UIButton *)tile;
 - (void)setPortType:(NSUInteger)type;
+- (NSUInteger)getPortType;
 - (BOOL)isPortTile;
 
 @end

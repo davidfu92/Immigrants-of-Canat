@@ -20,7 +20,7 @@
 @property (nonatomic) NSUInteger resourceType, rollNumber;
 @property (nonatomic) CGPoint location;
 @property (nonatomic) BOOL hasThief;
-@property (strong, nonatomic) UIButton *correspondingTile;
+@property (strong, nonatomic) UIButton *correspondingTile, *bigTile;
 
 @end
 

@@ -9,10 +9,12 @@
 #import "CatanViewController.h"
 #import "Board.h"
 #import "Tile.h"
+#import "TileModifyingViewController.h"
 
 @interface CatanViewController ()
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *tileArray;
 @property (strong, nonatomic) Board *board;
+@property (strong, nonatomic) UIButton *segueButton;
 
 @end
 
@@ -34,6 +36,22 @@
     }
     
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString:@"modalSegue"]) {
+        TileModifyingViewController *controller = (TileModifyingViewController *)segue.destinationViewController;
+        controller.sentButton = _segueButton;
+        controller.board = _board;
+    }
+}
+
+- (IBAction)tileWasTapped:(UIButton *)sender {
+    
+    _segueButton = sender;
+    [self performSegueWithIdentifier:@"modalSegue" sender:self];
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {

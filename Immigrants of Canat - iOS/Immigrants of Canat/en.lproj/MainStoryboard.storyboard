@@ -21,6 +21,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="GOy-oL-b5x"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bs-6Z-bEf">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -31,6 +34,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="LvA-hX-kzi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFn-gI-FQh">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -41,6 +47,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="BcQ-cr-Jz3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttW-qy-qyk">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -52,6 +61,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="f5B-xc-JYx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vr5-Um-ixm">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -63,6 +75,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="CaM-kd-5Wu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2I-y7-mmG">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -73,6 +88,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="6lh-Ju-OyH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vT-38-4HJ">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -83,6 +101,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="hCa-6a-7Tq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IE4-4X-cfw">
                                 <constraints>
@@ -97,6 +118,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="ccI-6x-qad"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovM-eW-GRe">
                                 <constraints>
@@ -111,6 +135,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="Gts-SL-4Na"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjf-KQ-zUt">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -122,6 +149,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="CFO-uH-DI0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8K-9y-MVe">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -132,6 +162,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="Ro9-pE-2Yo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujp-ty-pyg">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -142,6 +175,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="Qrq-mw-Ssh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xac-3O-Fjw">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -152,6 +188,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="4tm-fo-qoJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRs-YW-Au3">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -162,6 +201,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="iEl-xT-Q2Q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vti-Af-WZV">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -172,6 +214,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="kQt-TS-VW0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbH-d5-ZNF">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -182,6 +227,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="iSh-wG-Gsz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8m-Yy-fZ7">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -192,6 +240,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="jEl-4R-u0t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHA-mS-kJV">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -203,6 +254,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="gHf-k6-rqT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v73-3B-RIv">
                                 <constraints>
@@ -217,6 +271,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tileWasTapped:" destination="aHH-N3-AzS" eventType="touchUpInside" id="TSH-Os-nsm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2Z-rk-Uaw">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -630,11 +687,149 @@
                         <outletCollection property="tileArray" destination="w0Q-tO-Sy7" id="grW-hh-bVK"/>
                         <outletCollection property="tileArray" destination="mgV-SI-hdL" id="3Uj-br-6LT"/>
                         <outletCollection property="tileArray" destination="HTe-pg-UX1" id="3P2-9j-oVc"/>
+                        <segue destination="yDF-EA-KmZ" kind="modal" identifier="modalSegue" id="0E1-SN-jqc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6H-8r-ylJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="297" y="39"/>
+            <point key="canvasLocation" x="25" y="59"/>
+        </scene>
+        <!--Tile Modifying View Controller-->
+        <scene sceneID="fah-Uq-psi">
+            <objects>
+                <viewController id="yDF-EA-KmZ" customClass="TileModifyingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QbH-wT-bV7">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9i-hS-9xN">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="IHZ-uG-w6p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="wheattile.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtP-Sk-619">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="ehf-nx-hsm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="4" image="stonetile.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEm-k6-Qw4">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="1de-ba-eSc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="2" image="stonetile.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bd5-QL-M6U">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="DOy-89-TRs"/>
+                                    <constraint firstAttribute="height" constant="290" id="dYe-yZ-bgZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="1" image="stonetile.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJP-D4-xtx">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="ILq-2O-OGP"/>
+                                    <constraint firstAttribute="width" constant="290" id="mxt-ML-Qjg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="3" image="stonetile.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7o-Bn-KxG">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="eY4-uv-xuh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="5" image="stonetile.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzv-Ip-59i">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="6" image="stonetile.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j7o-Bn-KxG" firstAttribute="leading" secondItem="bd5-QL-M6U" secondAttribute="leading" type="default" id="45B-vE-llo"/>
+                            <constraint firstItem="JEm-k6-Qw4" firstAttribute="leading" secondItem="QbH-wT-bV7" secondAttribute="leading" constant="137" id="5ic-oM-2Nk"/>
+                            <constraint firstItem="bd5-QL-M6U" firstAttribute="bottom" secondItem="JEm-k6-Qw4" secondAttribute="bottom" type="default" id="6Hh-Ee-dZb"/>
+                            <constraint firstItem="zzv-Ip-59i" firstAttribute="bottom" secondItem="j7o-Bn-KxG" secondAttribute="bottom" type="default" id="7iv-YW-JPK"/>
+                            <constraint firstItem="bd5-QL-M6U" firstAttribute="leading" secondItem="QbH-wT-bV7" secondAttribute="leading" constant="-106" id="8fD-bK-S4Y"/>
+                            <constraint firstItem="eJP-D4-xtx" firstAttribute="top" secondItem="o9i-hS-9xN" secondAttribute="top" type="default" id="9pB-bD-gYq"/>
+                            <constraint firstItem="CtP-Sk-619" firstAttribute="leading" secondItem="QbH-wT-bV7" secondAttribute="leading" constant="257" id="DcJ-xV-i4y"/>
+                            <constraint firstItem="zzv-Ip-59i" firstAttribute="leading" secondItem="JEm-k6-Qw4" secondAttribute="leading" type="default" id="T7S-s7-0wH"/>
+                            <constraint firstItem="zzv-Ip-59i" firstAttribute="top" secondItem="j7o-Bn-KxG" secondAttribute="top" type="default" id="dHT-Ns-uoR"/>
+                            <constraint firstItem="CtP-Sk-619" firstAttribute="top" secondItem="o9i-hS-9xN" secondAttribute="top" type="default" id="e3O-Fa-I7I"/>
+                            <constraint firstItem="eJP-D4-xtx" firstAttribute="leading" secondItem="QbH-wT-bV7" secondAttribute="leading" constant="-227" id="g9K-Sb-dZV"/>
+                            <constraint firstItem="zzv-Ip-59i" firstAttribute="trailing" secondItem="JEm-k6-Qw4" secondAttribute="trailing" type="default" id="gze-yR-abr"/>
+                            <constraint firstItem="o9i-hS-9xN" firstAttribute="centerX" secondItem="QbH-wT-bV7" secondAttribute="centerX" type="default" id="i9r-6b-omX"/>
+                            <constraint firstItem="j7o-Bn-KxG" firstAttribute="top" secondItem="QbH-wT-bV7" secondAttribute="top" constant="337" id="iXa-ai-Am9"/>
+                            <constraint firstItem="o9i-hS-9xN" firstAttribute="centerY" secondItem="QbH-wT-bV7" secondAttribute="centerY" type="default" id="iZa-sP-1W8"/>
+                            <constraint firstItem="bd5-QL-M6U" firstAttribute="top" secondItem="QbH-wT-bV7" secondAttribute="top" constant="-80" id="kQF-Lu-ZNZ"/>
+                            <constraint firstItem="bd5-QL-M6U" firstAttribute="top" secondItem="JEm-k6-Qw4" secondAttribute="top" type="default" id="tnA-05-bdk"/>
+                            <constraint firstItem="eJP-D4-xtx" firstAttribute="bottom" secondItem="o9i-hS-9xN" secondAttribute="bottom" type="default" id="umg-RA-yAC"/>
+                            <constraint firstItem="CtP-Sk-619" firstAttribute="bottom" secondItem="o9i-hS-9xN" secondAttribute="bottom" type="default" id="w7w-gI-WvX"/>
+                            <constraint firstItem="j7o-Bn-KxG" firstAttribute="trailing" secondItem="bd5-QL-M6U" secondAttribute="trailing" type="default" id="z9f-lq-SKB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CenterButton" destination="o9i-hS-9xN" id="bSu-YA-cmk"/>
+                        <outletCollection property="surroundingButtons" destination="bd5-QL-M6U" id="pAF-Fj-BgI"/>
+                        <outletCollection property="surroundingButtons" destination="JEm-k6-Qw4" id="RBL-Rp-IJw"/>
+                        <outletCollection property="surroundingButtons" destination="eJP-D4-xtx" id="Rzs-Cv-bQZ"/>
+                        <outletCollection property="surroundingButtons" destination="CtP-Sk-619" id="nDc-0r-ivq"/>
+                        <outletCollection property="surroundingButtons" destination="j7o-Bn-KxG" id="9uk-jq-Ey1"/>
+                        <outletCollection property="surroundingButtons" destination="zzv-Ip-59i" id="7Vs-No-jLG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uQc-ce-JKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479" y="59"/>
         </scene>
     </scenes>
     <resources>
@@ -656,11 +851,19 @@
         <class className="CatanViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CatanViewController.h"/>
             <relationships>
+                <relationship kind="action" name="tileWasTapped:" candidateClass="UIButton"/>
                 <relationship kind="outletCollection" name="tileArray" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TileModifyingViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TileModifyingViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="centerButton" candidateClass="UIButton"/>
+                <relationship kind="outletCollection" name="surroundingButtons" candidateClass="UIButton"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -13,7 +13,7 @@
 
 @property (nonatomic) CGPoint location;
 @property (strong, nonatomic) NSArray *surroundingTiles;
-@property (strong, nonatomic) UIButton *correspondingTile;
+@property (strong, nonatomic) UIButton *correspondingTile, *bigTile;
 
 @end
 
@@ -29,6 +29,10 @@
 
 - (NSArray *)getSurroundingTiles {
     return [_surroundingTiles copy];
+}
+
+- (void)setBigTile:(UIButton *)bigTile {
+    _bigTile = bigTile;
 }
 
 - (void)setCorrespondingButton:(UIButton *)tile {

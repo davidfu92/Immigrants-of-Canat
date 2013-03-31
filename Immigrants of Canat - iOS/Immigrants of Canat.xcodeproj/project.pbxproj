@@ -21,7 +21,6 @@
 		E7015B0B1707F3E400933C19 /* woodtile.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015AFF1707F3E400933C19 /* woodtile.png */; };
 		E7015B0D1707F7C900933C19 /* desert.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015B0C1707F7C900933C19 /* desert.png */; };
 		E7015B0F1707FC6B00933C19 /* genericport.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015B0E1707FC6B00933C19 /* genericport.png */; };
-		E78BC088170699B3006C4E69 /* TileView.m in Sources */ = {isa = PBXBuildFile; fileRef = E78BC087170699B3006C4E69 /* TileView.m */; };
 		E79FDC951704141800150B36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79FDC941704141800150B36 /* UIKit.framework */; };
 		E79FDC971704141800150B36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79FDC961704141800150B36 /* Foundation.framework */; };
 		E79FDC991704141800150B36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79FDC981704141800150B36 /* CoreGraphics.framework */; };
@@ -52,6 +51,7 @@
 		E79FDCF01704AD8500150B36 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCEF1704AD8500150B36 /* Board.m */; };
 		E79FDCF31704B28A00150B36 /* ResourceDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCF21704B28A00150B36 /* ResourceDeck.m */; };
 		E79FDCF61704B3A300150B36 /* DevCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCF51704B3A300150B36 /* DevCardDeck.m */; };
+		E7B59491170826990018E5DC /* TileModifyingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B59490170826990018E5DC /* TileModifyingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,8 +69,6 @@
 		E7015AFF1707F3E400933C19 /* woodtile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = woodtile.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/woodtile.png"; sourceTree = "<group>"; };
 		E7015B0C1707F7C900933C19 /* desert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = desert.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/desert.png"; sourceTree = "<group>"; };
 		E7015B0E1707FC6B00933C19 /* genericport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = genericport.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/genericport.png"; sourceTree = "<group>"; };
-		E78BC086170699B3006C4E69 /* TileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileView.h; sourceTree = "<group>"; };
-		E78BC087170699B3006C4E69 /* TileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileView.m; sourceTree = "<group>"; };
 		E79FDC911704141800150B36 /* Immigrants of Canat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Immigrants of Canat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79FDC941704141800150B36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E79FDC961704141800150B36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -125,6 +123,8 @@
 		E79FDCF21704B28A00150B36 /* ResourceDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceDeck.m; sourceTree = "<group>"; };
 		E79FDCF41704B3A300150B36 /* DevCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevCardDeck.h; sourceTree = "<group>"; };
 		E79FDCF51704B3A300150B36 /* DevCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevCardDeck.m; sourceTree = "<group>"; };
+		E7B5948F170826990018E5DC /* TileModifyingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileModifyingViewController.h; sourceTree = "<group>"; };
+		E7B59490170826990018E5DC /* TileModifyingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileModifyingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,8 +199,8 @@
 				E79FDCAC1704141900150B36 /* MainStoryboard.storyboard */,
 				E79FDCAF1704141900150B36 /* CatanViewController.h */,
 				E79FDCB01704141900150B36 /* CatanViewController.m */,
-				E78BC086170699B3006C4E69 /* TileView.h */,
-				E78BC087170699B3006C4E69 /* TileView.m */,
+				E7B5948F170826990018E5DC /* TileModifyingViewController.h */,
+				E7B59490170826990018E5DC /* TileModifyingViewController.m */,
 				E79FDC9B1704141800150B36 /* Supporting Files */,
 			);
 			path = "Immigrants of Canat";
@@ -408,7 +408,7 @@
 				E79FDCF01704AD8500150B36 /* Board.m in Sources */,
 				E79FDCF31704B28A00150B36 /* ResourceDeck.m in Sources */,
 				E79FDCF61704B3A300150B36 /* DevCardDeck.m in Sources */,
-				E78BC088170699B3006C4E69 /* TileView.m in Sources */,
+				E7B59491170826990018E5DC /* TileModifyingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

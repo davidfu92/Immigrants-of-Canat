@@ -14,6 +14,7 @@
 - (CGPoint) getLocation;
 - (void)setSurroundingTiles:(NSArray *)surroundingTiles;
 - (void)setCorrespondingButton:(UIButton *)tile;
+- (void)setBigTile:(UIButton *)bigTile;
 - (NSArray *)getSurroundingTiles;
 
 @end

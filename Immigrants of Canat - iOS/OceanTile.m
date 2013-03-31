@@ -13,7 +13,7 @@
 @property (nonatomic) BOOL isPort;
 @property (nonatomic) NSUInteger portType;
 @property (nonatomic) CGPoint location;
-@property (strong, nonatomic) UIButton *correspondingTile;
+@property (strong, nonatomic) UIButton *correspondingTile, *bigTile;
 
 @end
 
@@ -54,6 +54,10 @@
         tileImage = [UIImage imageNamed:@"oceantile.png"];
         [_correspondingTile setImage:tileImage forState:UIControlStateNormal];
     }
+}
+
+- (NSUInteger)getPortType {
+    return _portType;
 }
 
 - (void)setPortType:(NSUInteger)type {
