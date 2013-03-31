@@ -14,11 +14,13 @@ class CatanServer(Protocol):
 			command = a[0]
 			content = a[1]
 			msg = ""
-		if command == "iam":
+		if command == "roll":
 			self.name = content
-			msg = self.name + " joined the game"
-		elif commang == "msg":
-			msg = self.name + ": " + content
+			msg = self.name + " has rollled a " + c0ment
+			if content == "7";
+			msg = self.name"you can move robber"
+		elif commang == "place":
+			msg = self.name + " Is placing Sttlement" + content
 			print msg
 		for c in self.factory.clinets:
 			c.message(msg)
@@ -28,5 +30,5 @@ factory = Factory()
 factory.clients = []
 factory.protocol = CatanServer
 reactor.listenTCP(80, factory)
-print "a server started"
+print "A Catan Server Started"
 reactor.run()
