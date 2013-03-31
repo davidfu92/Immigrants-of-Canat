@@ -21,6 +21,8 @@
 		E7015B0B1707F3E400933C19 /* woodtile.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015AFF1707F3E400933C19 /* woodtile.png */; };
 		E7015B0D1707F7C900933C19 /* desert.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015B0C1707F7C900933C19 /* desert.png */; };
 		E7015B0F1707FC6B00933C19 /* genericport.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015B0E1707FC6B00933C19 /* genericport.png */; };
+		E706B44F1708904500C9E786 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E706B44E1708904500C9E786 /* icon.png */; };
+		E706B4511708906D00C9E786 /* iconsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = E706B4501708906D00C9E786 /* iconsmall.png */; };
 		E75A529B170846BA008CCDAE /* bluesettlement.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A5297170846BA008CCDAE /* bluesettlement.png */; };
 		E75A529C170846BA008CCDAE /* greensettlement.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A5298170846BA008CCDAE /* greensettlement.png */; };
 		E75A529D170846BA008CCDAE /* pinksettlement.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A5299170846BA008CCDAE /* pinksettlement.png */; };
@@ -92,6 +94,8 @@
 		E7015AFF1707F3E400933C19 /* woodtile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = woodtile.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/woodtile.png"; sourceTree = "<group>"; };
 		E7015B0C1707F7C900933C19 /* desert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = desert.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/desert.png"; sourceTree = "<group>"; };
 		E7015B0E1707FC6B00933C19 /* genericport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = genericport.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/genericport.png"; sourceTree = "<group>"; };
+		E706B44E1708904500C9E786 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		E706B4501708906D00C9E786 /* iconsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconsmall.png; sourceTree = "<group>"; };
 		E75A5297170846BA008CCDAE /* bluesettlement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bluesettlement.png; path = "../../../../Desktop/HackRU Shit/bluesettlement.png"; sourceTree = "<group>"; };
 		E75A5298170846BA008CCDAE /* greensettlement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greensettlement.png; path = "../../../../Desktop/HackRU Shit/greensettlement.png"; sourceTree = "<group>"; };
 		E75A5299170846BA008CCDAE /* pinksettlement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinksettlement.png; path = "../../../../Desktop/HackRU Shit/pinksettlement.png"; sourceTree = "<group>"; };
@@ -234,6 +238,8 @@
 		E79FDC881704141800150B36 = {
 			isa = PBXGroup;
 			children = (
+				E706B4501708906D00C9E786 /* iconsmall.png */,
+				E706B44E1708904500C9E786 /* icon.png */,
 				E79FDC9A1704141800150B36 /* Immigrants of Canat */,
 				E79FDC931704141800150B36 /* Frameworks */,
 				E79FDC921704141800150B36 /* Products */,
@@ -471,6 +477,8 @@
 				E75A52C5170861DE008CCDAE /* stonetilehole.png in Resources */,
 				E75A52C6170861DE008CCDAE /* wheattilehole.png in Resources */,
 				E75A52C7170861DE008CCDAE /* woodtilehole.png in Resources */,
+				E706B44F1708904500C9E786 /* icon.png in Resources */,
+				E706B4511708906D00C9E786 /* iconsmall.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
