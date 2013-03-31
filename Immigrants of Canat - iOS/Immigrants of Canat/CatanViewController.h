@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CatanViewController : UIViewController
+@interface CatanViewController : UIViewController <NSStreamDelegate>
 
 @end

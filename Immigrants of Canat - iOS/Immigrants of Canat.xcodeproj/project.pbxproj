@@ -21,6 +21,23 @@
 		E7015B0B1707F3E400933C19 /* woodtile.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015AFF1707F3E400933C19 /* woodtile.png */; };
 		E7015B0D1707F7C900933C19 /* desert.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015B0C1707F7C900933C19 /* desert.png */; };
 		E7015B0F1707FC6B00933C19 /* genericport.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015B0E1707FC6B00933C19 /* genericport.png */; };
+		E75A529B170846BA008CCDAE /* bluesettlement.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A5297170846BA008CCDAE /* bluesettlement.png */; };
+		E75A529C170846BA008CCDAE /* greensettlement.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A5298170846BA008CCDAE /* greensettlement.png */; };
+		E75A529D170846BA008CCDAE /* pinksettlement.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A5299170846BA008CCDAE /* pinksettlement.png */; };
+		E75A529E170846BA008CCDAE /* redsettlement.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A529A170846BA008CCDAE /* redsettlement.png */; };
+		E75A52A3170847CF008CCDAE /* bluecity.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A529F170847CF008CCDAE /* bluecity.png */; };
+		E75A52A4170847CF008CCDAE /* greencity.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A52A0170847CF008CCDAE /* greencity.png */; };
+		E75A52A5170847CF008CCDAE /* pinkcity.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A52A1170847CF008CCDAE /* pinkcity.png */; };
+		E75A52A6170847CF008CCDAE /* redcity.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A52A2170847CF008CCDAE /* redcity.png */; };
+		E75A52A917084B55008CCDAE /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = E75A52A817084B55008CCDAE /* Dice.m */; };
+		E75A52B017084DD4008CCDAE /* die1.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A52AA17084DD4008CCDAE /* die1.png */; };
+		E75A52B117084DD4008CCDAE /* die2.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A52AB17084DD4008CCDAE /* die2.png */; };
+		E75A52B217084DD4008CCDAE /* die3.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A52AC17084DD4008CCDAE /* die3.png */; };
+		E75A52B317084DD4008CCDAE /* die4.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A52AD17084DD4008CCDAE /* die4.png */; };
+		E75A52B417084DD4008CCDAE /* die5.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A52AE17084DD4008CCDAE /* die5.png */; };
+		E75A52B517084DD4008CCDAE /* die6.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A52AF17084DD4008CCDAE /* die6.png */; };
+		E75A52B81708504C008CCDAE /* RollNumberDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = E75A52B71708504B008CCDAE /* RollNumberDisplay.m */; };
+		E75A52BB17085595008CCDAE /* OpeningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75A52BA17085594008CCDAE /* OpeningViewController.m */; };
 		E79FDC951704141800150B36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79FDC941704141800150B36 /* UIKit.framework */; };
 		E79FDC971704141800150B36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79FDC961704141800150B36 /* Foundation.framework */; };
 		E79FDC991704141800150B36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79FDC981704141800150B36 /* CoreGraphics.framework */; };
@@ -69,6 +86,26 @@
 		E7015AFF1707F3E400933C19 /* woodtile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = woodtile.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/woodtile.png"; sourceTree = "<group>"; };
 		E7015B0C1707F7C900933C19 /* desert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = desert.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/desert.png"; sourceTree = "<group>"; };
 		E7015B0E1707FC6B00933C19 /* genericport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = genericport.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/genericport.png"; sourceTree = "<group>"; };
+		E75A5297170846BA008CCDAE /* bluesettlement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bluesettlement.png; path = "../../../../Desktop/HackRU Shit/bluesettlement.png"; sourceTree = "<group>"; };
+		E75A5298170846BA008CCDAE /* greensettlement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greensettlement.png; path = "../../../../Desktop/HackRU Shit/greensettlement.png"; sourceTree = "<group>"; };
+		E75A5299170846BA008CCDAE /* pinksettlement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinksettlement.png; path = "../../../../Desktop/HackRU Shit/pinksettlement.png"; sourceTree = "<group>"; };
+		E75A529A170846BA008CCDAE /* redsettlement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redsettlement.png; path = "../../../../Desktop/HackRU Shit/redsettlement.png"; sourceTree = "<group>"; };
+		E75A529F170847CF008CCDAE /* bluecity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bluecity.png; path = "../../../../Desktop/HackRU Shit/bluecity.png"; sourceTree = "<group>"; };
+		E75A52A0170847CF008CCDAE /* greencity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greencity.png; path = "../../../../Desktop/HackRU Shit/greencity.png"; sourceTree = "<group>"; };
+		E75A52A1170847CF008CCDAE /* pinkcity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinkcity.png; path = "../../../../Desktop/HackRU Shit/pinkcity.png"; sourceTree = "<group>"; };
+		E75A52A2170847CF008CCDAE /* redcity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redcity.png; path = "../../../../Desktop/HackRU Shit/redcity.png"; sourceTree = "<group>"; };
+		E75A52A717084B54008CCDAE /* Dice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
+		E75A52A817084B55008CCDAE /* Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
+		E75A52AA17084DD4008CCDAE /* die1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = die1.png; path = "../../../../Desktop/HackRU Shit/die1.png"; sourceTree = "<group>"; };
+		E75A52AB17084DD4008CCDAE /* die2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = die2.png; path = "../../../../Desktop/HackRU Shit/die2.png"; sourceTree = "<group>"; };
+		E75A52AC17084DD4008CCDAE /* die3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = die3.png; path = "../../../../Desktop/HackRU Shit/die3.png"; sourceTree = "<group>"; };
+		E75A52AD17084DD4008CCDAE /* die4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = die4.png; path = "../../../../Desktop/HackRU Shit/die4.png"; sourceTree = "<group>"; };
+		E75A52AE17084DD4008CCDAE /* die5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = die5.png; path = "../../../../Desktop/HackRU Shit/die5.png"; sourceTree = "<group>"; };
+		E75A52AF17084DD4008CCDAE /* die6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = die6.png; path = "../../../../Desktop/HackRU Shit/die6.png"; sourceTree = "<group>"; };
+		E75A52B61708504B008CCDAE /* RollNumberDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollNumberDisplay.h; sourceTree = "<group>"; };
+		E75A52B71708504B008CCDAE /* RollNumberDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollNumberDisplay.m; sourceTree = "<group>"; };
+		E75A52B917085594008CCDAE /* OpeningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpeningViewController.h; sourceTree = "<group>"; };
+		E75A52BA17085594008CCDAE /* OpeningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpeningViewController.m; sourceTree = "<group>"; };
 		E79FDC911704141800150B36 /* Immigrants of Canat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Immigrants of Canat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79FDC941704141800150B36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E79FDC961704141800150B36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -144,6 +181,12 @@
 		E78BC0891707A64B006C4E69 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E75A52AA17084DD4008CCDAE /* die1.png */,
+				E75A52AB17084DD4008CCDAE /* die2.png */,
+				E75A52AC17084DD4008CCDAE /* die3.png */,
+				E75A52AD17084DD4008CCDAE /* die4.png */,
+				E75A52AE17084DD4008CCDAE /* die5.png */,
+				E75A52AF17084DD4008CCDAE /* die6.png */,
 				E7015AF41707F3E400933C19 /* blanktile.png */,
 				E7015AF51707F3E400933C19 /* brickport.png */,
 				E7015AF61707F3E400933C19 /* bricktile.png */,
@@ -154,6 +197,14 @@
 				E7015B0C1707F7C900933C19 /* desert.png */,
 				E7015AFA1707F3E400933C19 /* sheeptile.png */,
 				E7015AFB1707F3E400933C19 /* stonetile.png */,
+				E75A5297170846BA008CCDAE /* bluesettlement.png */,
+				E75A5298170846BA008CCDAE /* greensettlement.png */,
+				E75A529F170847CF008CCDAE /* bluecity.png */,
+				E75A52A0170847CF008CCDAE /* greencity.png */,
+				E75A52A1170847CF008CCDAE /* pinkcity.png */,
+				E75A52A2170847CF008CCDAE /* redcity.png */,
+				E75A5299170846BA008CCDAE /* pinksettlement.png */,
+				E75A529A170846BA008CCDAE /* redsettlement.png */,
 				E7015AFC1707F3E400933C19 /* wheatport.png */,
 				E7015AFD1707F3E400933C19 /* wheattile.png */,
 				E7015AFE1707F3E400933C19 /* woodport.png */,
@@ -197,10 +248,14 @@
 				E79FDCA31704141900150B36 /* CatanAppDelegate.h */,
 				E79FDCA41704141900150B36 /* CatanAppDelegate.m */,
 				E79FDCAC1704141900150B36 /* MainStoryboard.storyboard */,
+				E75A52B917085594008CCDAE /* OpeningViewController.h */,
+				E75A52BA17085594008CCDAE /* OpeningViewController.m */,
 				E79FDCAF1704141900150B36 /* CatanViewController.h */,
 				E79FDCB01704141900150B36 /* CatanViewController.m */,
 				E7B5948F170826990018E5DC /* TileModifyingViewController.h */,
 				E7B59490170826990018E5DC /* TileModifyingViewController.m */,
+				E75A52B61708504B008CCDAE /* RollNumberDisplay.h */,
+				E75A52B71708504B008CCDAE /* RollNumberDisplay.m */,
 				E79FDC9B1704141800150B36 /* Supporting Files */,
 			);
 			path = "Immigrants of Canat";
@@ -234,6 +289,8 @@
 				E79FDCEC1704AD2D00150B36 /* Path.m */,
 				E79FDCE81704ABAC00150B36 /* Thief.h */,
 				E79FDCE91704ABAC00150B36 /* Thief.m */,
+				E75A52A717084B54008CCDAE /* Dice.h */,
+				E75A52A817084B55008CCDAE /* Dice.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -376,6 +433,20 @@
 				E7015B0B1707F3E400933C19 /* woodtile.png in Resources */,
 				E7015B0D1707F7C900933C19 /* desert.png in Resources */,
 				E7015B0F1707FC6B00933C19 /* genericport.png in Resources */,
+				E75A529B170846BA008CCDAE /* bluesettlement.png in Resources */,
+				E75A529C170846BA008CCDAE /* greensettlement.png in Resources */,
+				E75A529D170846BA008CCDAE /* pinksettlement.png in Resources */,
+				E75A529E170846BA008CCDAE /* redsettlement.png in Resources */,
+				E75A52A3170847CF008CCDAE /* bluecity.png in Resources */,
+				E75A52A4170847CF008CCDAE /* greencity.png in Resources */,
+				E75A52A5170847CF008CCDAE /* pinkcity.png in Resources */,
+				E75A52A6170847CF008CCDAE /* redcity.png in Resources */,
+				E75A52B017084DD4008CCDAE /* die1.png in Resources */,
+				E75A52B117084DD4008CCDAE /* die2.png in Resources */,
+				E75A52B217084DD4008CCDAE /* die3.png in Resources */,
+				E75A52B317084DD4008CCDAE /* die4.png in Resources */,
+				E75A52B417084DD4008CCDAE /* die5.png in Resources */,
+				E75A52B517084DD4008CCDAE /* die6.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +480,9 @@
 				E79FDCF31704B28A00150B36 /* ResourceDeck.m in Sources */,
 				E79FDCF61704B3A300150B36 /* DevCardDeck.m in Sources */,
 				E7B59491170826990018E5DC /* TileModifyingViewController.m in Sources */,
+				E75A52A917084B55008CCDAE /* Dice.m in Sources */,
+				E75A52B81708504C008CCDAE /* RollNumberDisplay.m in Sources */,
+				E75A52BB17085595008CCDAE /* OpeningViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

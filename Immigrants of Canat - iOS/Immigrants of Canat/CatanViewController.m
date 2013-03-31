@@ -15,6 +15,8 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *tileArray;
 @property (strong, nonatomic) Board *board;
 @property (strong, nonatomic) UIButton *segueButton;
+@property (strong, nonatomic) NSInputStream *input;
+@property (strong, nonatomic) NSOutputStream *output;
 
 @end
 
@@ -23,6 +25,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _input = [[NSInputStream alloc] init];
+    _output = [[NSOutputStream alloc] init];
+    
+    [self initNetworkCommunication];
     
     _board = [[Board alloc] init];
     
@@ -35,6 +42,20 @@
         [[_board getTileAtPoint:CGPointMake(x, y)] setCorrespondingButton:button];
     }
     
+}
+
+- (void)initNetworkCommunication {
+    CFReadStreamRef readStream;
+    CFWriteStreamRef writeStream;
+    CFStreamCreatePairWithSocketToHost(NULL, (CFStringRef)@"localhost", 80, &readStream, &writeStream);
+    _input = (__bridge NSInputStream *)readStream;
+    _output = (__bridge NSOutputStream *)writeStream;
+    [_input setDelegate:self];
+    [_output setDelegate:self];
+    [_input scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+    [_output scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+    [_input open];
+    [_output open];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

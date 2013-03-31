@@ -16,6 +16,9 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *centerButton;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *surroundingButtons;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *surroundingCorners;
+
+
 
 @end
 
@@ -35,6 +38,11 @@
     [super viewDidLoad];
 	
 }
+
+- (IBAction)cornerTapped:(UIButton *)sender {
+    NSLog(@"hello");
+}
+
 
 - (void)viewWillAppear:(BOOL)animated {
     NSString *identifier = [_sentButton titleForState:UIControlStateNormal];
