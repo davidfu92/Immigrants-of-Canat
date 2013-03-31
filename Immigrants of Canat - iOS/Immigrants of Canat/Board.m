@@ -14,7 +14,7 @@
 @interface Board()
 
 @property (strong, nonatomic) NSMutableArray *board;
-@property (nonatomic) NSUInteger woodCount, wheatCount, brickCount, sheepCount, oreCount, orePortCount, woodPortCount, wheatPortCount, brickPortCount, sheepPortCount, generticPortCount, desertCount;
+@property (nonatomic) NSUInteger woodCount, wheatCount, brickCount, sheepCount, oreCount, orePortCount, woodPortCount, wheatPortCount, brickPortCount, sheepPortCount, generticPortCount, desertCount, oceanCount;
 
 @end
 
@@ -40,84 +40,140 @@
                     if(i == 0 || i == xMax - 1) {
                         [[_board objectAtIndex:yCounter] addObject:[[Tile alloc] init]];
                     } else {
-                        NSUInteger random = arc4random_uniform(2);
-                        if(random == 1) {
-                            random = arc4random_uniform(5);
-                            [[_board objectAtIndex:yCounter] addObject:[[OceanTile alloc] initWithLocation:CGPointMake(i, yCounter) andPortStatus:YES]];
-                            if(random == 0) {
-                                [[[_board objectAtIndex:yCounter] objectAtIndex:i] setPortType:ORE_PORT];
-                                _orePortCount++;
-                            } else if(random == 1) {
-                                [[[_board objectAtIndex:yCounter] objectAtIndex:i] setPortType:WHEAT_PORT];
-                                _wheatPortCount++;
-                            } else if(random == 2) {
-                                [[[_board objectAtIndex:yCounter] objectAtIndex:i] setPortType:WOOD_PORT];
-                                _woodPortCount++;
-                            } else if(random == 3) {
-                                [[[_board objectAtIndex:yCounter] objectAtIndex:i] setPortType:SHEEP_PORT];
-                                _sheepPortCount++;
-                            } else if(random == 4) {
-                                [[[_board objectAtIndex:yCounter] objectAtIndex:i] setPortType:BRICK_PORT];
-                                _brickPortCount++;
-                            } else if(random == 5) {
-                                [[[_board objectAtIndex:yCounter] objectAtIndex:i] setPortType:GENERIC_PORT];
-                                _generticPortCount++;
+                        BOOL completed = NO;
+                        while(!completed) {
+                            NSUInteger random = arc4random_uniform(2);
+                            if(random == 1) {
+                                random = arc4random_uniform(6);
+                                OceanTile *tmpTile = [[OceanTile alloc] initWithLocation:CGPointMake(i, yCounter) andPortStatus:YES];
+                                if(random == 0 && _orePortCount < 1) {
+                                    completed = YES;
+                                    [tmpTile setPortType:ORE_PORT];
+                                    [[_board objectAtIndex:yCounter] addObject:tmpTile];
+                                    _orePortCount++;
+                                } else if(random == 1 && _wheatPortCount < 1) {
+                                    completed = YES;
+                                    [tmpTile setPortType:WHEAT_PORT];
+                                    [[_board objectAtIndex:yCounter] addObject:tmpTile];
+                                    _wheatPortCount++;
+                                } else if(random == 2 && _woodPortCount < 1) {
+                                    completed = YES;
+                                    [tmpTile setPortType:WOOD_PORT];
+                                    [[_board objectAtIndex:yCounter] addObject:tmpTile];
+                                    _woodPortCount++;
+                                } else if(random == 3 && _sheepPortCount < 1) {
+                                    completed = YES;
+                                    [tmpTile setPortType:SHEEP_PORT];
+                                    [[_board objectAtIndex:yCounter] addObject:tmpTile];
+                                    _sheepPortCount++;
+                                } else if(random == 4 && _brickPortCount < 1) {
+                                    completed = YES;
+                                    [tmpTile setPortType:BRICK_PORT];
+                                    [[_board objectAtIndex:yCounter] addObject:tmpTile];
+                                    _brickPortCount++;
+                                } else if(random == 5 && _generticPortCount < 4) {
+                                    completed = YES;
+                                    [tmpTile setPortType:GENERIC_PORT];
+                                    [[_board objectAtIndex:yCounter] addObject:tmpTile];
+                                    _generticPortCount++;
+                                }
+                            } else {
+                                if(_oceanCount < 9) {
+                                    completed = YES;
+                                    _oceanCount++;
+                                    [[_board objectAtIndex:yCounter] addObject:[[OceanTile alloc] initWithLocation:CGPointMake(i, yCounter) andPortStatus:NO]];
+                                }
                             }
-                        } else {
-                            [[_board objectAtIndex:yCounter] addObject:[[OceanTile alloc] initWithLocation:CGPointMake(i, yCounter) andPortStatus:NO]];
                         }
                     }
                 } else {
                     if(i == 0 || i == xMax - 1) {
                         [[_board objectAtIndex:yCounter] addObject:[[Tile alloc] init]];
                     } else if(i == 1 || i == xMax - 2) {
-                        NSUInteger random = arc4random_uniform(2);
-                        if(random == 1) {
-                            random = arc4random_uniform(6);
-                            [[_board objectAtIndex:yCounter] addObject:[[OceanTile alloc] initWithLocation:CGPointMake(i, yCounter) andPortStatus:YES]];
-                            if(random == 0) {
-                                [[[_board objectAtIndex:yCounter] objectAtIndex:i] setPortType:ORE_PORT];
-                                _orePortCount++;
-                            } else if(random == 1) {
-                                [[[_board objectAtIndex:yCounter] objectAtIndex:i] setPortType:WHEAT_PORT];
-                                _wheatPortCount++;
-                            } else if(random == 2) {
-                                [[[_board objectAtIndex:yCounter] objectAtIndex:i] setPortType:WOOD_PORT];
-                                _woodPortCount++;
-                            } else if(random == 3) {
-                                [[[_board objectAtIndex:yCounter] objectAtIndex:i] setPortType:SHEEP_PORT];
-                                _sheepPortCount++;
-                            } else if(random == 4) {
-                                [[[_board objectAtIndex:yCounter] objectAtIndex:i] setPortType:BRICK_PORT];
-                                _brickPortCount++;
-                            } else if(random == 5) {
-                                [[[_board objectAtIndex:yCounter] objectAtIndex:i] setPortType:GENERIC_PORT];
-                                _generticPortCount++;
+                        BOOL completed = NO;
+                        while(!completed) {
+                            NSUInteger random = arc4random_uniform(2);
+                            if(random == 1) {
+                                random = arc4random_uniform(6);
+                                OceanTile *tmpTile = [[OceanTile alloc] initWithLocation:CGPointMake(i, yCounter) andPortStatus:YES];
+                                if(random == 0 && _orePortCount < 1) {
+                                    completed = YES;
+                                    [tmpTile setPortType:ORE_PORT];
+                                    [[_board objectAtIndex:yCounter] addObject:tmpTile];
+                                    _orePortCount++;
+                                } else if(random == 1 && _wheatPortCount < 1) {
+                                    completed = YES;
+                                    [tmpTile setPortType:WHEAT_PORT];
+                                    [[_board objectAtIndex:yCounter] addObject:tmpTile];
+                                    _wheatPortCount++;
+                                } else if(random == 2 && _woodPortCount < 1) {
+                                    completed = YES;
+                                    [tmpTile setPortType:WOOD_PORT];
+                                    [[_board objectAtIndex:yCounter] addObject:tmpTile];
+                                    _woodPortCount++;
+                                } else if(random == 3 && _sheepPortCount < 1) {
+                                    completed = YES;
+                                    [tmpTile setPortType:SHEEP_PORT];
+                                    [[_board objectAtIndex:yCounter] addObject:tmpTile];
+                                    _sheepPortCount++;
+                                } else if(random == 4 && _brickPortCount < 1) {
+                                    completed = YES;
+                                    [tmpTile setPortType:BRICK_PORT];
+                                    [[_board objectAtIndex:yCounter] addObject:tmpTile];
+                                    _brickPortCount++;
+                                } else if(random == 5 && _generticPortCount < 4) {
+                                    completed = YES;
+                                    [tmpTile setPortType:GENERIC_PORT];
+                                    [[_board objectAtIndex:yCounter] addObject:tmpTile];
+                                    _generticPortCount++;
+                                }
+                            } else {
+                                if(_oceanCount < 9) {
+                                    completed = YES;
+                                    _oceanCount++;
+                                    [[_board objectAtIndex:yCounter] addObject:[[OceanTile alloc] initWithLocation:CGPointMake(i, yCounter) andPortStatus:NO]];
+                                }
                             }
-                        } else {
-                            [[_board objectAtIndex:yCounter] addObject:[[OceanTile alloc] initWithLocation:CGPointMake(i, yCounter) andPortStatus:NO]];
                         }
                     } else {
-                        NSUInteger random = arc4random_uniform(6);
-                        NSUInteger rollNumber = arc4random_uniform(13);
-                        while(rollNumber < 2 || rollNumber == 7) {
-                            rollNumber = arc4random_uniform(13);
+                        BOOL completed = NO;
+                        while(!completed) {
+                            NSUInteger random = arc4random_uniform(6);
+                            NSUInteger rollNumber = arc4random_uniform(13);
+                            while(rollNumber < 2 || rollNumber == 7) {
+                                rollNumber = arc4random_uniform(13);
+                            }
+                            NSUInteger resource;
+                            if(random == 0 && _oreCount < 3) {
+                                completed = YES;
+                                resource = STONE_RESOURCE;
+                                _oreCount++;
+                            } else if(random == 1 && _brickCount < 3) {
+                                completed = YES;
+                                resource = CLAY_RESOURCE;
+                                _brickCount++;
+                            } else if(random == 2 && _woodCount < 4) {
+                                completed = YES;
+                                resource = LUMBER_RESOURCE;
+                                _woodCount++;
+                            } else if(random == 3 && _wheatCount < 4) {
+                                completed = YES;
+                                resource = BARLEY_RESOURCE;
+                                _wheatCount++;
+                            } else if(random == 4 && _sheepCount < 4) {
+                                completed = YES;
+                                resource = LIVESTOCK_RESOURCE;
+                                _sheepCount++;
+                            } else if(random == 5 && _desertCount < 1) {
+                                completed = YES;
+                                resource = NORESOURCE;
+                                _desertCount++;
+                            } else {
+                                continue;
+                            }
+                            [[_board objectAtIndex:yCounter] addObject:[[ResourceTile alloc] initWithResourceType:resource andLocation:CGPointMake(i, yCounter) andRollNumber:rollNumber]];
                         }
-                        NSUInteger resource;
-                        if(random == 0) {
-                            resource = STONE_RESOURCE;
-                        } else if(random == 1) {
-                            resource = CLAY_RESOURCE;
-                        } else if(random == 2) {
-                            resource = LUMBER_RESOURCE;
-                        } else if(random == 3) {
-                            resource = BARLEY_RESOURCE;
-                        } else if(random == 4) {
-                            resource = LIVESTOCK_RESOURCE;
-                        } else {
-                            resource = NORESOURCE;
-                        }
-                        [[_board objectAtIndex:yCounter] addObject:[[ResourceTile alloc] initWithResourceType:resource andLocation:CGPointMake(i, yCounter) andRollNumber:rollNumber]];
+                        
                     }
                 }
             }
