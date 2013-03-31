@@ -8,9 +8,11 @@
 
 #import "CatanViewController.h"
 #import "Board.h"
+#import "Tile.h"
 
 @interface CatanViewController ()
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *tileArray;
+@property (strong, nonatomic) Board *board;
 
 @end
 
@@ -20,8 +22,15 @@
 {
     [super viewDidLoad];
     
+    _board = [[Board alloc] init];
+    
     for(UIButton *button in _tileArray) {
-        
+        NSString *identifier = [button titleForState:UIControlStateNormal];
+        NSRange first = {0, 1};
+        NSRange second = {1, 2};
+        NSUInteger y = [[identifier substringWithRange:first] integerValue];
+        NSUInteger x = [[identifier substringWithRange:second] integerValue];
+        [[_board getTileAtPoint:CGPointMake(x, y)] setCorrespondingButton:button];
     }
     
 }

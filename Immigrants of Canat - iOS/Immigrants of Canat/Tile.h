@@ -13,6 +13,7 @@
 
 - (CGPoint) getLocation;
 - (void)setSurroundingTiles:(NSArray *)surroundingTiles;
+- (void)setCorrespondingButton:(UIButton *)tile;
 - (NSArray *)getSurroundingTiles;
 
 @end

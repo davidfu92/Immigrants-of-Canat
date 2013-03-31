@@ -17,10 +17,10 @@
 
 @implementation Deck
 
-- (Card *)drawCard {
+- (Card *)drawCardAtIndex:(NSUInteger)index {
     if(_deck) {
-        Card *returnCard = [_deck objectAtIndex:0];
-        [_deck removeObjectAtIndex:0];
+        Card *returnCard = [_deck objectAtIndex:index];
+        [_deck removeObjectAtIndex:index];
         return returnCard;
     } else {
         return nil;

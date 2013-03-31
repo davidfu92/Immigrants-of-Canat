@@ -13,6 +13,6 @@
 
 @interface Board : NSObject
 
-- (Tile *)getTileAtX:(NSUInteger)xpos Y:(NSUInteger) ypos;
+- (Tile *)getTileAtPoint:(CGPoint)point;
 
 @end

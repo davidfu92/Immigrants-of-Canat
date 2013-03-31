@@ -11,6 +11,5 @@
 @interface Card : NSObject
 
 - (NSUInteger)getType;
-- (void)setVisibleTile:(UIButton *)tile;
 
 @end

@@ -11,7 +11,9 @@
 @interface OceanTile()
 
 @property (nonatomic) BOOL isPort;
+@property (nonatomic) NSUInteger portType;
 @property (nonatomic) CGPoint location;
+@property (strong, nonatomic) UIButton *correspondingTile;
 
 @end
 
@@ -28,6 +30,36 @@
     
     return self;
     
+}
+
+- (void)setCorrespondingButton:(UIButton *)tile {
+    _correspondingTile = tile;
+    UIImage *tileImage;
+    if(_isPort) {
+        if(_portType == ORE_PORT) {
+            tileImage = [UIImage imageNamed:@"oreport.png"];
+        } else if(_portType == WHEAT_PORT) {
+            tileImage = [UIImage imageNamed:@"wheatport.png"];
+        } else if(_portType == BRICK_PORT) {
+            tileImage = [UIImage imageNamed:@"brickport.png"];
+        } else if(_portType == SHEEP_PORT) {
+            tileImage = [UIImage imageNamed:@"sheepport.png"];
+        } else if(_portType == WOOD_PORT) {
+            tileImage = [UIImage imageNamed:@"woodport.png"];
+        } else if(_portType == GENERIC_PORT) {
+            tileImage = [UIImage imageNamed:@"genericport.png"];
+        }
+        [_correspondingTile setImage:tileImage forState:UIControlStateNormal];
+    } else {
+        tileImage = [UIImage imageNamed:@"oceantile.png"];
+        [_correspondingTile setImage:tileImage forState:UIControlStateNormal];
+    }
+}
+
+- (void)setPortType:(NSUInteger)type {
+    if(_isPort) {
+        _portType = type;
+    }
 }
 
 - (BOOL)isPortTile {

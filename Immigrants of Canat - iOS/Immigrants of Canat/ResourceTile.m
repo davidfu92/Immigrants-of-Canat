@@ -20,6 +20,7 @@
 @property (nonatomic) NSUInteger resourceType, rollNumber;
 @property (nonatomic) CGPoint location;
 @property (nonatomic) BOOL hasThief;
+@property (strong, nonatomic) UIButton *correspondingTile;
 
 @end
 
@@ -30,7 +31,7 @@
     self = [super init];
     
     if(self) {
-        if((resource == STONE_RESOURCE || resource == CLAY_RESOURCE || resource == LUMBER_RESOURCE || resource == LIVESTOCK_RESOURCE || resource == BARLEY_RESOURCE) && rollNumber > 0 && rollNumber < 13) {
+        if((resource == STONE_RESOURCE || resource == CLAY_RESOURCE || resource == LUMBER_RESOURCE || resource == LIVESTOCK_RESOURCE || resource == BARLEY_RESOURCE || resource == NORESOURCE) && rollNumber > 0 && rollNumber < 13) {
             _resourceType = resource;
             _location = location;
             _rollNumber = rollNumber;
@@ -41,6 +42,25 @@
     
     return self;
     
+}
+
+- (void)setCorrespondingButton:(UIButton *)tile {
+    _correspondingTile = tile;
+    UIImage *buttonImage;
+    if(_resourceType == STONE_RESOURCE) {
+        buttonImage = [UIImage imageNamed:@"stonetile.png"];
+    } else if(_resourceType == CLAY_RESOURCE) {
+        buttonImage = [UIImage imageNamed:@"bricktile.png"];
+    } else if(_resourceType == LUMBER_RESOURCE) {
+        buttonImage = [UIImage imageNamed:@"woodtile.png"];
+    } else if(_resourceType == LIVESTOCK_RESOURCE) {
+        buttonImage = [UIImage imageNamed:@"sheeptile.png"];
+    } else if(_resourceType == BARLEY_RESOURCE) {
+        buttonImage = [UIImage imageNamed:@"wheattile.png"];
+    } else if(_resourceType == NORESOURCE) {
+        buttonImage = [UIImage imageNamed:@"desert.png"];
+    }
+    [_correspondingTile setImage:buttonImage forState:UIControlStateNormal];
 }
 
 - (NSUInteger)getResourceType {

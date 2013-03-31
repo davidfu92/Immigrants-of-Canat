@@ -42,5 +42,6 @@
 - (BOOL)setPathAt:(NSUInteger)side withOwner:(Player *)owner;
 - (BOOL)hasPathAt:(NSUInteger)side;
 - (BOOL)hasThief;
+- (void)setCorrespondingButton:(UIButton *)tile;
 
 @end

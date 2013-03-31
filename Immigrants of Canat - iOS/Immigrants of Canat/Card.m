@@ -21,8 +21,4 @@
     return _type;
 }
 
-- (void)setVisibleTile:(UIButton *)tile {
-    _tile = tile;
-}
-
 @end
