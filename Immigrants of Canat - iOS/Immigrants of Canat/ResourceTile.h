@@ -38,10 +38,12 @@
 - (BOOL)hasSettlementAt:(NSUInteger)corner;
 - (BOOL)setSettlementAt:(NSUInteger)corner toBe:(Settlement *)settlement withOwner:(Player *)owner;
 - (Settlement *)getSettlementAt:(NSUInteger)corner;
+- (NSArray *)getSettlements;
 - (NSUInteger)settlementIsOfTypeAt:(NSUInteger)corner;
 - (BOOL)setPathAt:(NSUInteger)side withOwner:(Player *)owner;
 - (BOOL)hasPathAt:(NSUInteger)side;
 - (BOOL)hasThief;
 - (void)setCorrespondingButton:(UIButton *)tile;
+- (void)setCorrespondingLabel:(UILabel *)label;
 
 @end

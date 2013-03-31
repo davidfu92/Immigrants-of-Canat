@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *centerButton;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *surroundingButtons;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *surroundingCorners;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *labelArray;
+@property (weak, nonatomic) IBOutlet UILabel *mainLabel;
 
 
 
@@ -43,7 +45,6 @@
     NSLog(@"hello");
 }
 
-
 - (void)viewWillAppear:(BOOL)animated {
     NSString *identifier = [_sentButton titleForState:UIControlStateNormal];
     NSRange first = {0, 1};
@@ -53,17 +54,18 @@
     ResourceTile *tile = (ResourceTile *)[_board getTileAtPoint:CGPointMake(x, y)];
     [tile setBigTile:_centerButton];
     NSUInteger resource = [tile getResourceType];
+    _mainLabel.text = [NSString stringWithFormat:@"%d", [tile getNumberOfTile]];
     UIImage *image;
     if(resource == STONE_RESOURCE) {
-        image = [UIImage imageNamed:@"stonetile.png"];
+        image = [UIImage imageNamed:@"stonetilehole.png"];
     } else if(resource == LUMBER_RESOURCE) {
-        image = [UIImage imageNamed:@"woodtile.png"];
+        image = [UIImage imageNamed:@"woodtilehole.png"];
     } else if(resource == CLAY_RESOURCE) {
-        image = [UIImage imageNamed:@"bricktile.png"];
+        image = [UIImage imageNamed:@"bricktilehole.png"];
     } else if(resource == LIVESTOCK_RESOURCE) {
-        image = [UIImage imageNamed:@"sheeptile.png"];
+        image = [UIImage imageNamed:@"sheeptilehole.png"];
     } else if(resource == BARLEY_RESOURCE) {
-        image = [UIImage imageNamed:@"wheattile.png"];
+        image = [UIImage imageNamed:@"wheattilehole.png"];
     } else if(resource == NORESOURCE) {
         image = [UIImage imageNamed:@"desert.png"];
     }
@@ -76,15 +78,15 @@
             ResourceTile *newTile = (ResourceTile *)tmpTile;
             resource = [newTile getResourceType];
             if(resource == STONE_RESOURCE) {
-                image = [UIImage imageNamed:@"stonetile.png"];
+                image = [UIImage imageNamed:@"stonetilehole.png"];
             } else if(resource == BARLEY_RESOURCE) {
-                image = [UIImage imageNamed:@"wheattile.png"];
+                image = [UIImage imageNamed:@"wheattilehole.png"];
             } else if(resource == LIVESTOCK_RESOURCE) {
-                image = [UIImage imageNamed:@"sheeptile.png"];
+                image = [UIImage imageNamed:@"sheeptilehole.png"];
             } else if(resource == LUMBER_RESOURCE) {
-                image = [UIImage imageNamed:@"woodtile.png"];
+                image = [UIImage imageNamed:@"woodtilehole.png"];
             } else if(resource == CLAY_RESOURCE) {
-                image = [UIImage imageNamed:@"bricktile.png"];
+                image = [UIImage imageNamed:@"bricktilehole.png"];
             } else if(resource == NORESOURCE) {
                 image = [UIImage imageNamed:@"desert.png"];
             }
@@ -108,6 +110,14 @@
             }
         }
         [button setImage:image forState:UIControlStateNormal];
+    }
+    for(UILabel *label in _labelArray) {
+        NSUInteger labelNumber = [label.text integerValue];
+        ResourceTile *tmpTile = [surroundingTiles objectAtIndex:labelNumber - 1];
+        if([tmpTile isKindOfClass:[ResourceTile class]]) {
+            label.text = [NSString stringWithFormat:@"%d", [tmpTile getNumberOfTile]];
+        }
+        
     }
 }
 

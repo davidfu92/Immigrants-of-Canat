@@ -221,4 +221,28 @@
     return [[_board objectAtIndex:point.y] objectAtIndex:point.x];
 }
 
+- (NSArray *)getTilesWithRollNumber:(NSUInteger)rollNumber {
+    NSMutableArray *tiles = [[NSMutableArray alloc] init];
+    NSUInteger xMax = 6, yCounter = 2;
+    BOOL hasPassedMiddle = NO;
+    while(yCounter < 7) {
+        for(NSUInteger i = 2; i < xMax - 2; i++) {
+            NSUInteger tileNumber = [[[_board objectAtIndex:yCounter] objectAtIndex:i] getNumberOfTile];
+            if(rollNumber == tileNumber) {
+                [tiles addObject:[[_board objectAtIndex:yCounter] objectAtIndex:i]];
+            }
+        }
+        yCounter++;
+        if(xMax == 8) {
+            hasPassedMiddle = YES;
+        }
+        if(hasPassedMiddle) {
+            xMax--;
+        } else {
+            xMax++;
+        }
+    }
+    return [tiles copy];
+}
+
 @end

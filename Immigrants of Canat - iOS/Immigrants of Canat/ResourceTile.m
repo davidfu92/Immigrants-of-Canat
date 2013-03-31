@@ -21,6 +21,7 @@
 @property (nonatomic) CGPoint location;
 @property (nonatomic) BOOL hasThief;
 @property (strong, nonatomic) UIButton *correspondingTile, *bigTile;
+@property (strong, nonatomic) UILabel *correspondingLabel;
 
 @end
 
@@ -48,19 +49,29 @@
     _correspondingTile = tile;
     UIImage *buttonImage;
     if(_resourceType == STONE_RESOURCE) {
-        buttonImage = [UIImage imageNamed:@"stonetile.png"];
+        buttonImage = [UIImage imageNamed:@"stonetilehole.png"];
     } else if(_resourceType == CLAY_RESOURCE) {
-        buttonImage = [UIImage imageNamed:@"bricktile.png"];
+        buttonImage = [UIImage imageNamed:@"bricktilehole.png"];
     } else if(_resourceType == LUMBER_RESOURCE) {
-        buttonImage = [UIImage imageNamed:@"woodtile.png"];
+        buttonImage = [UIImage imageNamed:@"woodtilehole.png"];
     } else if(_resourceType == LIVESTOCK_RESOURCE) {
-        buttonImage = [UIImage imageNamed:@"sheeptile.png"];
+        buttonImage = [UIImage imageNamed:@"sheeptilehole.png"];
     } else if(_resourceType == BARLEY_RESOURCE) {
-        buttonImage = [UIImage imageNamed:@"wheattile.png"];
+        buttonImage = [UIImage imageNamed:@"wheattilehole.png"];
     } else if(_resourceType == NORESOURCE) {
         buttonImage = [UIImage imageNamed:@"desert.png"];
     }
     [_correspondingTile setImage:buttonImage forState:UIControlStateNormal];
+}
+
+- (void)setCorrespondingLabel:(UILabel *)label {
+    if(_resourceType != NORESOURCE) {
+        _correspondingLabel = label;
+        label.text = [NSString stringWithFormat:@"%d", _rollNumber];
+    } else {
+        _correspondingLabel = label;
+        label.text = @"";
+    }
 }
 
 - (NSUInteger)getResourceType {
@@ -96,6 +107,10 @@
 
 - (Settlement *)getSettlementAt:(NSUInteger)corner {
     return [_settlements objectForKey:[[NSNumber alloc] initWithInt:corner]];
+}
+
+- (NSArray *)getSettlements {
+    return [_settlements allValues];
 }
 
 - (NSUInteger)settlementIsOfTypeAt:(NSUInteger)corner {

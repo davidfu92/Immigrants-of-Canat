@@ -38,6 +38,12 @@
 		E75A52B517084DD4008CCDAE /* die6.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A52AF17084DD4008CCDAE /* die6.png */; };
 		E75A52B81708504C008CCDAE /* RollNumberDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = E75A52B71708504B008CCDAE /* RollNumberDisplay.m */; };
 		E75A52BB17085595008CCDAE /* OpeningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75A52BA17085594008CCDAE /* OpeningViewController.m */; };
+		E75A52BD17085D8E008CCDAE /* PhDKnowledge.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A52BC17085D8E008CCDAE /* PhDKnowledge.png */; };
+		E75A52C3170861DE008CCDAE /* bricktilehole.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A52BE170861DE008CCDAE /* bricktilehole.png */; };
+		E75A52C4170861DE008CCDAE /* sheeptilehole.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A52BF170861DE008CCDAE /* sheeptilehole.png */; };
+		E75A52C5170861DE008CCDAE /* stonetilehole.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A52C0170861DE008CCDAE /* stonetilehole.png */; };
+		E75A52C6170861DE008CCDAE /* wheattilehole.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A52C1170861DE008CCDAE /* wheattilehole.png */; };
+		E75A52C7170861DE008CCDAE /* woodtilehole.png in Resources */ = {isa = PBXBuildFile; fileRef = E75A52C2170861DE008CCDAE /* woodtilehole.png */; };
 		E79FDC951704141800150B36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79FDC941704141800150B36 /* UIKit.framework */; };
 		E79FDC971704141800150B36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79FDC961704141800150B36 /* Foundation.framework */; };
 		E79FDC991704141800150B36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79FDC981704141800150B36 /* CoreGraphics.framework */; };
@@ -106,6 +112,12 @@
 		E75A52B71708504B008CCDAE /* RollNumberDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollNumberDisplay.m; sourceTree = "<group>"; };
 		E75A52B917085594008CCDAE /* OpeningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpeningViewController.h; sourceTree = "<group>"; };
 		E75A52BA17085594008CCDAE /* OpeningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpeningViewController.m; sourceTree = "<group>"; };
+		E75A52BC17085D8E008CCDAE /* PhDKnowledge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PhDKnowledge.png; path = "../../../../Desktop/HackRU Shit/PhDKnowledge.png"; sourceTree = "<group>"; };
+		E75A52BE170861DE008CCDAE /* bricktilehole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bricktilehole.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/bricktilehole.png"; sourceTree = "<group>"; };
+		E75A52BF170861DE008CCDAE /* sheeptilehole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sheeptilehole.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/sheeptilehole.png"; sourceTree = "<group>"; };
+		E75A52C0170861DE008CCDAE /* stonetilehole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stonetilehole.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/stonetilehole.png"; sourceTree = "<group>"; };
+		E75A52C1170861DE008CCDAE /* wheattilehole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wheattilehole.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/wheattilehole.png"; sourceTree = "<group>"; };
+		E75A52C2170861DE008CCDAE /* woodtilehole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = woodtilehole.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/woodtilehole.png"; sourceTree = "<group>"; };
 		E79FDC911704141800150B36 /* Immigrants of Canat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Immigrants of Canat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79FDC941704141800150B36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E79FDC961704141800150B36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -181,12 +193,18 @@
 		E78BC0891707A64B006C4E69 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E75A52BE170861DE008CCDAE /* bricktilehole.png */,
+				E75A52BF170861DE008CCDAE /* sheeptilehole.png */,
+				E75A52C0170861DE008CCDAE /* stonetilehole.png */,
+				E75A52C1170861DE008CCDAE /* wheattilehole.png */,
+				E75A52C2170861DE008CCDAE /* woodtilehole.png */,
 				E75A52AA17084DD4008CCDAE /* die1.png */,
 				E75A52AB17084DD4008CCDAE /* die2.png */,
 				E75A52AC17084DD4008CCDAE /* die3.png */,
 				E75A52AD17084DD4008CCDAE /* die4.png */,
 				E75A52AE17084DD4008CCDAE /* die5.png */,
 				E75A52AF17084DD4008CCDAE /* die6.png */,
+				E75A52BC17085D8E008CCDAE /* PhDKnowledge.png */,
 				E7015AF41707F3E400933C19 /* blanktile.png */,
 				E7015AF51707F3E400933C19 /* brickport.png */,
 				E7015AF61707F3E400933C19 /* bricktile.png */,
@@ -447,6 +465,12 @@
 				E75A52B317084DD4008CCDAE /* die4.png in Resources */,
 				E75A52B417084DD4008CCDAE /* die5.png in Resources */,
 				E75A52B517084DD4008CCDAE /* die6.png in Resources */,
+				E75A52BD17085D8E008CCDAE /* PhDKnowledge.png in Resources */,
+				E75A52C3170861DE008CCDAE /* bricktilehole.png in Resources */,
+				E75A52C4170861DE008CCDAE /* sheeptilehole.png in Resources */,
+				E75A52C5170861DE008CCDAE /* stonetilehole.png in Resources */,
+				E75A52C6170861DE008CCDAE /* wheattilehole.png in Resources */,
+				E75A52C7170861DE008CCDAE /* woodtilehole.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

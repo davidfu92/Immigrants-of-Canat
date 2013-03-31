@@ -14,5 +14,6 @@
 @interface Board : NSObject
 
 - (Tile *)getTileAtPoint:(CGPoint)point;
+- (NSArray *)getTilesWithRollNumber:(NSUInteger)rollNumber;
 
 @end
