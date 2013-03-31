@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7015B001707F3E400933C19 /* blanktile.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015AF41707F3E400933C19 /* blanktile.png */; };
+		E7015B011707F3E400933C19 /* brickport.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015AF51707F3E400933C19 /* brickport.png */; };
+		E7015B021707F3E400933C19 /* bricktile.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015AF61707F3E400933C19 /* bricktile.png */; };
+		E7015B031707F3E400933C19 /* oceantile.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015AF71707F3E400933C19 /* oceantile.png */; };
+		E7015B041707F3E400933C19 /* oreport.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015AF81707F3E400933C19 /* oreport.png */; };
+		E7015B051707F3E400933C19 /* sheepport.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015AF91707F3E400933C19 /* sheepport.png */; };
+		E7015B061707F3E400933C19 /* sheeptile.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015AFA1707F3E400933C19 /* sheeptile.png */; };
+		E7015B071707F3E400933C19 /* stonetile.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015AFB1707F3E400933C19 /* stonetile.png */; };
+		E7015B081707F3E400933C19 /* wheatport.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015AFC1707F3E400933C19 /* wheatport.png */; };
+		E7015B091707F3E400933C19 /* wheattile.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015AFD1707F3E400933C19 /* wheattile.png */; };
+		E7015B0A1707F3E400933C19 /* woodport.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015AFE1707F3E400933C19 /* woodport.png */; };
+		E7015B0B1707F3E400933C19 /* woodtile.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015AFF1707F3E400933C19 /* woodtile.png */; };
+		E7015B0D1707F7C900933C19 /* desert.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015B0C1707F7C900933C19 /* desert.png */; };
+		E7015B0F1707FC6B00933C19 /* genericport.png in Resources */ = {isa = PBXBuildFile; fileRef = E7015B0E1707FC6B00933C19 /* genericport.png */; };
+		E78BC088170699B3006C4E69 /* TileView.m in Sources */ = {isa = PBXBuildFile; fileRef = E78BC087170699B3006C4E69 /* TileView.m */; };
+		E79FDC951704141800150B36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79FDC941704141800150B36 /* UIKit.framework */; };
+		E79FDC971704141800150B36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79FDC961704141800150B36 /* Foundation.framework */; };
+		E79FDC991704141800150B36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79FDC981704141800150B36 /* CoreGraphics.framework */; };
+		E79FDC9F1704141800150B36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E79FDC9D1704141800150B36 /* InfoPlist.strings */; };
+		E79FDCA11704141900150B36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCA01704141900150B36 /* main.m */; };
+		E79FDCA51704141900150B36 /* CatanAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCA41704141900150B36 /* CatanAppDelegate.m */; };
+		E79FDCA71704141900150B36 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E79FDCA61704141900150B36 /* Default.png */; };
+		E79FDCA91704141900150B36 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E79FDCA81704141900150B36 /* Default@2x.png */; };
+		E79FDCAB1704141900150B36 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E79FDCAA1704141900150B36 /* Default-568h@2x.png */; };
+		E79FDCAE1704141900150B36 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79FDCAC1704141900150B36 /* MainStoryboard.storyboard */; };
+		E79FDCB11704141900150B36 /* CatanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCB01704141900150B36 /* CatanViewController.m */; };
+		E79FDCB91704144200150B36 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCB81704144200150B36 /* Tile.m */; };
+		E79FDCBC1704145000150B36 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCBB1704145000150B36 /* Player.m */; };
+		E79FDCBF1704145700150B36 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCBE1704145700150B36 /* Card.m */; };
+		E79FDCC21704149800150B36 /* ResourceCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCC11704149800150B36 /* ResourceCard.m */; };
+		E79FDCC5170414AA00150B36 /* DevCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCC4170414AA00150B36 /* DevCard.m */; };
+		E79FDCC9170414E200150B36 /* OceanTile.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCC8170414E200150B36 /* OceanTile.m */; };
+		E79FDCCF1704155B00150B36 /* ComputerPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCCE1704155B00150B36 /* ComputerPlayer.m */; };
+		E79FDCD31704157B00150B36 /* HumanPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCD21704157B00150B36 /* HumanPlayer.m */; };
+		E79FDCD61704A47800150B36 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCD51704A47800150B36 /* Deck.m */; };
+		E79FDCDA1704A49300150B36 /* PlayerDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCD91704A49300150B36 /* PlayerDeck.m */; };
+		E79FDCDD1704A8DD00150B36 /* ResourceTile.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCDC1704A8DD00150B36 /* ResourceTile.m */; };
+		E79FDCE01704AB5400150B36 /* Settlement.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCDF1704AB5400150B36 /* Settlement.m */; };
+		E79FDCE41704AB6F00150B36 /* Village.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCE31704AB6F00150B36 /* Village.m */; };
+		E79FDCE71704AB7800150B36 /* Metropolis.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCE61704AB7800150B36 /* Metropolis.m */; };
+		E79FDCEA1704ABAD00150B36 /* Thief.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCE91704ABAC00150B36 /* Thief.m */; };
+		E79FDCED1704AD2D00150B36 /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCEC1704AD2D00150B36 /* Path.m */; };
+		E79FDCF01704AD8500150B36 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCEF1704AD8500150B36 /* Board.m */; };
+		E79FDCF31704B28A00150B36 /* ResourceDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCF21704B28A00150B36 /* ResourceDeck.m */; };
+		E79FDCF61704B3A300150B36 /* DevCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = E79FDCF51704B3A300150B36 /* DevCardDeck.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E7015AF41707F3E400933C19 /* blanktile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blanktile.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/blanktile.png"; sourceTree = "<group>"; };
+		E7015AF51707F3E400933C19 /* brickport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brickport.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/brickport.png"; sourceTree = "<group>"; };
+		E7015AF61707F3E400933C19 /* bricktile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bricktile.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/bricktile.png"; sourceTree = "<group>"; };
+		E7015AF71707F3E400933C19 /* oceantile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = oceantile.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/oceantile.png"; sourceTree = "<group>"; };
+		E7015AF81707F3E400933C19 /* oreport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = oreport.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/oreport.png"; sourceTree = "<group>"; };
+		E7015AF91707F3E400933C19 /* sheepport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sheepport.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/sheepport.png"; sourceTree = "<group>"; };
+		E7015AFA1707F3E400933C19 /* sheeptile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sheeptile.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/sheeptile.png"; sourceTree = "<group>"; };
+		E7015AFB1707F3E400933C19 /* stonetile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stonetile.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/stonetile.png"; sourceTree = "<group>"; };
+		E7015AFC1707F3E400933C19 /* wheatport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wheatport.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/wheatport.png"; sourceTree = "<group>"; };
+		E7015AFD1707F3E400933C19 /* wheattile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wheattile.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/wheattile.png"; sourceTree = "<group>"; };
+		E7015AFE1707F3E400933C19 /* woodport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = woodport.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/woodport.png"; sourceTree = "<group>"; };
+		E7015AFF1707F3E400933C19 /* woodtile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = woodtile.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/woodtile.png"; sourceTree = "<group>"; };
+		E7015B0C1707F7C900933C19 /* desert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = desert.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/desert.png"; sourceTree = "<group>"; };
+		E7015B0E1707FC6B00933C19 /* genericport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = genericport.png; path = "../../../../Desktop/HackRU Shit/90degreesrotate/genericport.png"; sourceTree = "<group>"; };
+		E78BC086170699B3006C4E69 /* TileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileView.h; sourceTree = "<group>"; };
+		E78BC087170699B3006C4E69 /* TileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileView.m; sourceTree = "<group>"; };
+		E79FDC911704141800150B36 /* Immigrants of Canat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Immigrants of Canat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E79FDC941704141800150B36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E79FDC961704141800150B36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E79FDC981704141800150B36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E79FDC9C1704141800150B36 /* Immigrants of Canat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Immigrants of Canat-Info.plist"; sourceTree = "<group>"; };
+		E79FDC9E1704141800150B36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E79FDCA01704141900150B36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E79FDCA21704141900150B36 /* Immigrants of Canat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Immigrants of Canat-Prefix.pch"; sourceTree = "<group>"; };
+		E79FDCA31704141900150B36 /* CatanAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatanAppDelegate.h; sourceTree = "<group>"; };
+		E79FDCA41704141900150B36 /* CatanAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatanAppDelegate.m; sourceTree = "<group>"; };
+		E79FDCA61704141900150B36 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E79FDCA81704141900150B36 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E79FDCAA1704141900150B36 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E79FDCAD1704141900150B36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E79FDCAF1704141900150B36 /* CatanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatanViewController.h; sourceTree = "<group>"; };
+		E79FDCB01704141900150B36 /* CatanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatanViewController.m; sourceTree = "<group>"; };
+		E79FDCB71704144200150B36 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		E79FDCB81704144200150B36 /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
+		E79FDCBA1704145000150B36 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		E79FDCBB1704145000150B36 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		E79FDCBD1704145700150B36 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		E79FDCBE1704145700150B36 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		E79FDCC01704149800150B36 /* ResourceCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceCard.h; sourceTree = "<group>"; };
+		E79FDCC11704149800150B36 /* ResourceCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceCard.m; sourceTree = "<group>"; };
+		E79FDCC3170414AA00150B36 /* DevCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevCard.h; sourceTree = "<group>"; };
+		E79FDCC4170414AA00150B36 /* DevCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevCard.m; sourceTree = "<group>"; };
+		E79FDCC7170414E200150B36 /* OceanTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OceanTile.h; path = ../OceanTile.h; sourceTree = "<group>"; };
+		E79FDCC8170414E200150B36 /* OceanTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OceanTile.m; path = ../OceanTile.m; sourceTree = "<group>"; };
+		E79FDCCD1704155B00150B36 /* ComputerPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComputerPlayer.h; path = ../ComputerPlayer.h; sourceTree = "<group>"; };
+		E79FDCCE1704155B00150B36 /* ComputerPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComputerPlayer.m; path = ../ComputerPlayer.m; sourceTree = "<group>"; };
+		E79FDCD11704157B00150B36 /* HumanPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanPlayer.h; sourceTree = "<group>"; };
+		E79FDCD21704157B00150B36 /* HumanPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanPlayer.m; sourceTree = "<group>"; };
+		E79FDCD41704A47800150B36 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		E79FDCD51704A47800150B36 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		E79FDCD81704A49300150B36 /* PlayerDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDeck.h; sourceTree = "<group>"; };
+		E79FDCD91704A49300150B36 /* PlayerDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDeck.m; sourceTree = "<group>"; };
+		E79FDCDB1704A8DD00150B36 /* ResourceTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceTile.h; sourceTree = "<group>"; };
+		E79FDCDC1704A8DD00150B36 /* ResourceTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceTile.m; sourceTree = "<group>"; };
+		E79FDCDE1704AB5400150B36 /* Settlement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settlement.h; sourceTree = "<group>"; };
+		E79FDCDF1704AB5400150B36 /* Settlement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settlement.m; sourceTree = "<group>"; };
+		E79FDCE21704AB6F00150B36 /* Village.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Village.h; sourceTree = "<group>"; };
+		E79FDCE31704AB6F00150B36 /* Village.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Village.m; sourceTree = "<group>"; };
+		E79FDCE51704AB7800150B36 /* Metropolis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Metropolis.h; sourceTree = "<group>"; };
+		E79FDCE61704AB7800150B36 /* Metropolis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Metropolis.m; sourceTree = "<group>"; };
+		E79FDCE81704ABAC00150B36 /* Thief.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thief.h; sourceTree = "<group>"; };
+		E79FDCE91704ABAC00150B36 /* Thief.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thief.m; sourceTree = "<group>"; };
+		E79FDCEB1704AD2D00150B36 /* Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Path.h; sourceTree = "<group>"; };
+		E79FDCEC1704AD2D00150B36 /* Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Path.m; sourceTree = "<group>"; };
+		E79FDCEE1704AD8500150B36 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		E79FDCEF1704AD8500150B36 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		E79FDCF11704B28900150B36 /* ResourceDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceDeck.h; sourceTree = "<group>"; };
+		E79FDCF21704B28A00150B36 /* ResourceDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceDeck.m; sourceTree = "<group>"; };
+		E79FDCF41704B3A300150B36 /* DevCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevCardDeck.h; sourceTree = "<group>"; };
+		E79FDCF51704B3A300150B36 /* DevCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevCardDeck.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E79FDC8E1704141800150B36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79FDC951704141800150B36 /* UIKit.framework in Frameworks */,
+				E79FDC971704141800150B36 /* Foundation.framework in Frameworks */,
+				E79FDC991704141800150B36 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E78BC0891707A64B006C4E69 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E7015AF41707F3E400933C19 /* blanktile.png */,
+				E7015AF51707F3E400933C19 /* brickport.png */,
+				E7015AF61707F3E400933C19 /* bricktile.png */,
+				E7015AF71707F3E400933C19 /* oceantile.png */,
+				E7015AF81707F3E400933C19 /* oreport.png */,
+				E7015AF91707F3E400933C19 /* sheepport.png */,
+				E7015B0E1707FC6B00933C19 /* genericport.png */,
+				E7015B0C1707F7C900933C19 /* desert.png */,
+				E7015AFA1707F3E400933C19 /* sheeptile.png */,
+				E7015AFB1707F3E400933C19 /* stonetile.png */,
+				E7015AFC1707F3E400933C19 /* wheatport.png */,
+				E7015AFD1707F3E400933C19 /* wheattile.png */,
+				E7015AFE1707F3E400933C19 /* woodport.png */,
+				E7015AFF1707F3E400933C19 /* woodtile.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E79FDC881704141800150B36 = {
+			isa = PBXGroup;
+			children = (
+				E79FDC9A1704141800150B36 /* Immigrants of Canat */,
+				E79FDC931704141800150B36 /* Frameworks */,
+				E79FDC921704141800150B36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E79FDC921704141800150B36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E79FDC911704141800150B36 /* Immigrants of Canat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E79FDC931704141800150B36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E79FDC941704141800150B36 /* UIKit.framework */,
+				E79FDC961704141800150B36 /* Foundation.framework */,
+				E79FDC981704141800150B36 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E79FDC9A1704141800150B36 /* Immigrants of Canat */ = {
+			isa = PBXGroup;
+			children = (
+				E78BC0891707A64B006C4E69 /* Images */,
+				E79FDCC6170414BA00150B36 /* Model */,
+				E79FDCA31704141900150B36 /* CatanAppDelegate.h */,
+				E79FDCA41704141900150B36 /* CatanAppDelegate.m */,
+				E79FDCAC1704141900150B36 /* MainStoryboard.storyboard */,
+				E79FDCAF1704141900150B36 /* CatanViewController.h */,
+				E79FDCB01704141900150B36 /* CatanViewController.m */,
+				E78BC086170699B3006C4E69 /* TileView.h */,
+				E78BC087170699B3006C4E69 /* TileView.m */,
+				E79FDC9B1704141800150B36 /* Supporting Files */,
+			);
+			path = "Immigrants of Canat";
+			sourceTree = "<group>";
+		};
+		E79FDC9B1704141800150B36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E79FDC9C1704141800150B36 /* Immigrants of Canat-Info.plist */,
+				E79FDC9D1704141800150B36 /* InfoPlist.strings */,
+				E79FDCA01704141900150B36 /* main.m */,
+				E79FDCA21704141900150B36 /* Immigrants of Canat-Prefix.pch */,
+				E79FDCA61704141900150B36 /* Default.png */,
+				E79FDCA81704141900150B36 /* Default@2x.png */,
+				E79FDCAA1704141900150B36 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E79FDCC6170414BA00150B36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E79FDCEE1704AD8500150B36 /* Board.h */,
+				E79FDCEF1704AD8500150B36 /* Board.m */,
+				E79FDCE11704AB5A00150B36 /* Settlement */,
+				E79FDCD71704A47F00150B36 /* Decks */,
+				E79FDCD01704156100150B36 /* Players */,
+				E79FDCCC1704151C00150B36 /* Cards */,
+				E79FDCCA170414F100150B36 /* Tiles */,
+				E79FDCEB1704AD2D00150B36 /* Path.h */,
+				E79FDCEC1704AD2D00150B36 /* Path.m */,
+				E79FDCE81704ABAC00150B36 /* Thief.h */,
+				E79FDCE91704ABAC00150B36 /* Thief.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E79FDCCA170414F100150B36 /* Tiles */ = {
+			isa = PBXGroup;
+			children = (
+				E79FDCB71704144200150B36 /* Tile.h */,
+				E79FDCB81704144200150B36 /* Tile.m */,
+				E79FDCDB1704A8DD00150B36 /* ResourceTile.h */,
+				E79FDCDC1704A8DD00150B36 /* ResourceTile.m */,
+				E79FDCC7170414E200150B36 /* OceanTile.h */,
+				E79FDCC8170414E200150B36 /* OceanTile.m */,
+			);
+			name = Tiles;
+			sourceTree = "<group>";
+		};
+		E79FDCCC1704151C00150B36 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				E79FDCBD1704145700150B36 /* Card.h */,
+				E79FDCBE1704145700150B36 /* Card.m */,
+				E79FDCC01704149800150B36 /* ResourceCard.h */,
+				E79FDCC11704149800150B36 /* ResourceCard.m */,
+				E79FDCC3170414AA00150B36 /* DevCard.h */,
+				E79FDCC4170414AA00150B36 /* DevCard.m */,
+			);
+			name = Cards;
+			sourceTree = "<group>";
+		};
+		E79FDCD01704156100150B36 /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				E79FDCBA1704145000150B36 /* Player.h */,
+				E79FDCBB1704145000150B36 /* Player.m */,
+				E79FDCD11704157B00150B36 /* HumanPlayer.h */,
+				E79FDCD21704157B00150B36 /* HumanPlayer.m */,
+				E79FDCCD1704155B00150B36 /* ComputerPlayer.h */,
+				E79FDCCE1704155B00150B36 /* ComputerPlayer.m */,
+			);
+			name = Players;
+			sourceTree = "<group>";
+		};
+		E79FDCD71704A47F00150B36 /* Decks */ = {
+			isa = PBXGroup;
+			children = (
+				E79FDCD41704A47800150B36 /* Deck.h */,
+				E79FDCD51704A47800150B36 /* Deck.m */,
+				E79FDCF11704B28900150B36 /* ResourceDeck.h */,
+				E79FDCF21704B28A00150B36 /* ResourceDeck.m */,
+				E79FDCD81704A49300150B36 /* PlayerDeck.h */,
+				E79FDCD91704A49300150B36 /* PlayerDeck.m */,
+				E79FDCF41704B3A300150B36 /* DevCardDeck.h */,
+				E79FDCF51704B3A300150B36 /* DevCardDeck.m */,
+			);
+			name = Decks;
+			sourceTree = "<group>";
+		};
+		E79FDCE11704AB5A00150B36 /* Settlement */ = {
+			isa = PBXGroup;
+			children = (
+				E79FDCDE1704AB5400150B36 /* Settlement.h */,
+				E79FDCDF1704AB5400150B36 /* Settlement.m */,
+				E79FDCE21704AB6F00150B36 /* Village.h */,
+				E79FDCE31704AB6F00150B36 /* Village.m */,
+				E79FDCE51704AB7800150B36 /* Metropolis.h */,
+				E79FDCE61704AB7800150B36 /* Metropolis.m */,
+			);
+			name = Settlement;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E79FDC901704141800150B36 /* Immigrants of Canat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E79FDCB41704141900150B36 /* Build configuration list for PBXNativeTarget "Immigrants of Canat" */;
+			buildPhases = (
+				E79FDC8D1704141800150B36 /* Sources */,
+				E79FDC8E1704141800150B36 /* Frameworks */,
+				E79FDC8F1704141800150B36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Immigrants of Canat";
+			productName = "Immigrants of Canat";
+			productReference = E79FDC911704141800150B36 /* Immigrants of Canat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E79FDC891704141800150B36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Catan;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Christopher Fretz";
+			};
+			buildConfigurationList = E79FDC8C1704141800150B36 /* Build configuration list for PBXProject "Immigrants of Canat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E79FDC881704141800150B36;
+			productRefGroup = E79FDC921704141800150B36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E79FDC901704141800150B36 /* Immigrants of Canat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E79FDC8F1704141800150B36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79FDC9F1704141800150B36 /* InfoPlist.strings in Resources */,
+				E79FDCA71704141900150B36 /* Default.png in Resources */,
+				E79FDCA91704141900150B36 /* Default@2x.png in Resources */,
+				E79FDCAB1704141900150B36 /* Default-568h@2x.png in Resources */,
+				E79FDCAE1704141900150B36 /* MainStoryboard.storyboard in Resources */,
+				E7015B001707F3E400933C19 /* blanktile.png in Resources */,
+				E7015B011707F3E400933C19 /* brickport.png in Resources */,
+				E7015B021707F3E400933C19 /* bricktile.png in Resources */,
+				E7015B031707F3E400933C19 /* oceantile.png in Resources */,
+				E7015B041707F3E400933C19 /* oreport.png in Resources */,
+				E7015B051707F3E400933C19 /* sheepport.png in Resources */,
+				E7015B061707F3E400933C19 /* sheeptile.png in Resources */,
+				E7015B071707F3E400933C19 /* stonetile.png in Resources */,
+				E7015B081707F3E400933C19 /* wheatport.png in Resources */,
+				E7015B091707F3E400933C19 /* wheattile.png in Resources */,
+				E7015B0A1707F3E400933C19 /* woodport.png in Resources */,
+				E7015B0B1707F3E400933C19 /* woodtile.png in Resources */,
+				E7015B0D1707F7C900933C19 /* desert.png in Resources */,
+				E7015B0F1707FC6B00933C19 /* genericport.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E79FDC8D1704141800150B36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79FDCA11704141900150B36 /* main.m in Sources */,
+				E79FDCA51704141900150B36 /* CatanAppDelegate.m in Sources */,
+				E79FDCB11704141900150B36 /* CatanViewController.m in Sources */,
+				E79FDCB91704144200150B36 /* Tile.m in Sources */,
+				E79FDCBC1704145000150B36 /* Player.m in Sources */,
+				E79FDCBF1704145700150B36 /* Card.m in Sources */,
+				E79FDCC21704149800150B36 /* ResourceCard.m in Sources */,
+				E79FDCC5170414AA00150B36 /* DevCard.m in Sources */,
+				E79FDCC9170414E200150B36 /* OceanTile.m in Sources */,
+				E79FDCCF1704155B00150B36 /* ComputerPlayer.m in Sources */,
+				E79FDCD31704157B00150B36 /* HumanPlayer.m in Sources */,
+				E79FDCD61704A47800150B36 /* Deck.m in Sources */,
+				E79FDCDA1704A49300150B36 /* PlayerDeck.m in Sources */,
+				E79FDCDD1704A8DD00150B36 /* ResourceTile.m in Sources */,
+				E79FDCE01704AB5400150B36 /* Settlement.m in Sources */,
+				E79FDCE41704AB6F00150B36 /* Village.m in Sources */,
+				E79FDCE71704AB7800150B36 /* Metropolis.m in Sources */,
+				E79FDCEA1704ABAD00150B36 /* Thief.m in Sources */,
+				E79FDCED1704AD2D00150B36 /* Path.m in Sources */,
+				E79FDCF01704AD8500150B36 /* Board.m in Sources */,
+				E79FDCF31704B28A00150B36 /* ResourceDeck.m in Sources */,
+				E79FDCF61704B3A300150B36 /* DevCardDeck.m in Sources */,
+				E78BC088170699B3006C4E69 /* TileView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E79FDC9D1704141800150B36 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E79FDC9E1704141800150B36 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E79FDCAC1704141900150B36 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E79FDCAD1704141900150B36 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E79FDCB21704141900150B36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E79FDCB31704141900150B36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E79FDCB51704141900150B36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Immigrants of Canat/Immigrants of Canat-Prefix.pch";
+				INFOPLIST_FILE = "Immigrants of Canat/Immigrants of Canat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E79FDCB61704141900150B36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Immigrants of Canat/Immigrants of Canat-Prefix.pch";
+				INFOPLIST_FILE = "Immigrants of Canat/Immigrants of Canat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E79FDC8C1704141800150B36 /* Build configuration list for PBXProject "Immigrants of Canat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79FDCB21704141900150B36 /* Debug */,
+				E79FDCB31704141900150B36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E79FDCB41704141900150B36 /* Build configuration list for PBXNativeTarget "Immigrants of Canat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79FDCB51704141900150B36 /* Debug */,
+				E79FDCB61704141900150B36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E79FDC891704141800150B36 /* Project object */;
+}
