@@ -12,6 +12,8 @@
 @interface Deck : NSObject
 
 - (Card *)drawCardAtIndex:(NSUInteger)index;
+- (Card *)peekAtCardAtIndex:(NSUInteger)index;
+- (NSArray *)getCardArray;
 - (void)addCardToBottom:(Card *)card;
 - (void)addCardToTop:(Card *)card;
 

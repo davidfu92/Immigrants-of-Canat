@@ -10,10 +10,13 @@
 @class ResourceTile;
 @class OceanTile;
 @class Board;
+@class HumanPlayer;
 
 @interface TileModifyingViewController : UIViewController
 
 @property (strong, nonatomic) UIButton *sentButton;
 @property (strong, nonatomic) Board *board;
+@property (strong, nonatomic) HumanPlayer *player;
+@property (strong, nonatomic) NSArray *resourceDecks;
 
 @end

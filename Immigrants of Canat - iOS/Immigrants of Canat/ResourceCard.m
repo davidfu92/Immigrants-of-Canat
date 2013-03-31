@@ -32,4 +32,17 @@
     
 }
 
+- (BOOL)isEqual:(id)object {
+    if([object isMemberOfClass:[ResourceCard class]]) {
+        ResourceCard *otherCard = (ResourceCard *)object;
+        if([otherCard getType] == [self getType]) {
+            return YES;
+        } else {
+            return NO;
+        }
+    } else {
+        return NO;
+    }
+}
+
 @end

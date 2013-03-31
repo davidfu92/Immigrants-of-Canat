@@ -78,6 +78,8 @@
         TileModifyingViewController *controller = (TileModifyingViewController *)segue.destinationViewController;
         controller.sentButton = _segueButton;
         controller.board = _board;
+        controller.player = _player;
+        controller.resourceDecks = @[_stoneDeck, _barleyDeck, _livestockDeck, _lumberDeck, _clayDeck];
     }
 }
 

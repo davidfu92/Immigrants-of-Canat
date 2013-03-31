@@ -11,6 +11,7 @@
 #import "Board.h"
 #import "ResourceCard.h"
 #import "OceanTile.h"
+#import "HumanPlayer.h"
 
 @interface TileModifyingViewController ()
 
@@ -42,8 +43,14 @@
 }
 
 - (IBAction)cornerTapped:(UIButton *)sender {
-    NSLog(@"hello");
+    UIImage *image = [UIImage imageNamed:@"greensettlement.png"];
+    [sender setImage:image forState:UIControlStateNormal];
 }
+
+- (IBAction)dissmissModalView:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 - (void)viewWillAppear:(BOOL)animated {
     NSString *identifier = [_sentButton titleForState:UIControlStateNormal];

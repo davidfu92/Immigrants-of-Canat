@@ -27,6 +27,19 @@
     }
 }
 
+- (NSArray *)getCardArray {
+    return [_deck copy];
+}
+
+- (Card *)peekAtCardAtIndex:(NSUInteger)index {
+    if(_deck) {
+        return [_deck objectAtIndex:index];
+    } else {
+        return nil;
+    }
+    
+}
+
 - (void)addCardToBottom:(Card *)card {
     [_deck insertObject:card atIndex:[_deck count] - 1];
 }

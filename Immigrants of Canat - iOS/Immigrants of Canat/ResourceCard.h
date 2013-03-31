@@ -17,5 +17,6 @@
 #define BARLEY_RESOURCE 5
 
 - (id)initWithResource:(NSUInteger)resource;
+- (BOOL)isEqual:(id)object;
 
 @end
