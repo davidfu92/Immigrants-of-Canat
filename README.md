@@ -1,4 +1,4 @@
 Immigrants-of-Canat
 ===================
 
-Cross platform clone of Settler's of Catan
+Cross Platform Settlers of Catan Clone
